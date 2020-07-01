@@ -1,0 +1,118 @@
+.container{
+    display:grid;
+    width:100%;
+    grid-template-columns: 490px;
+    grid-template-rows: 100px 500px 350px 300px 200px 200px;
+    grid-template-areas: 
+    "hd"
+    "content1"
+    "box1"
+    "img1 "
+    "content2"
+    "ft";
+    grid-gap:20px;
+}
+
+.navbar{
+    grid-area:hd;
+    background-color:grey;
+    padding-bottom:38px;
+    padding-top:2px;
+  
+  }
+  .navbar a{
+      grid-area:hd;
+      padding:10px;
+      float:right;
+      margin-left:10px;
+      font-size:20px;
+      color:white;
+   }
+ .navbar  :hover{
+     color:black;
+ }
+  .content1{
+    grid-area:content1;
+    line-height:2;
+    margin-top:-80px;
+  }
+.box1{
+  grid-area:box1;
+  color:rgb(216, 54, 81);
+  background-color:rgb(255, 224, 229);
+  border:5px solid lightcoral;
+  padding:10px;
+  line-height:2;
+}
+.box1 h2{
+  color:black;
+}
+.box1 p{
+  position:center;
+}
+.img1{
+    grid-area:img1;
+    border: 5px solid rgb(236, 118, 137);
+}
+img{
+    width:100%;
+    height:100%;
+}
+.content2{
+  grid-area:content2;
+  line-height:2;
+}
+.footer{
+    grid-area:ft;
+    background-color:lightgray;
+  }
+ .footer img{
+    height:20%;
+    width:3%;
+    margin-left:20px;
+  }
+body{
+    background-color:white;
+    
+}
+h1{
+    text-align:left;
+    margin-bottom:10px;
+}
+
+h2{
+    color:white;
+}
+h6{
+  font-size:15px;
+}
+
+@media (min-width:650px) and (max-width:950px) {
+    .container{
+        display:grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 100px 800px 850px 200px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "content1 content1 box1 box1 box1 box1 box1 box1"
+        " img1 img1 img1 img1 content2 content2 content2 content2"
+        "ft ft ft ft ft ft ft ft";
+        grid-gap:20px;
+    }
+
+  } 
+  @media (min-width:951px){
+ .container{
+    display:grid;
+    width:100%;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 400px 300px 200px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "content1 content1 content1 content1 content1 box1 box1 box1"
+    " img1 img1 img1 content2 content2 content2 content2 content2 "
+    "ft ft ft ft ft ft ft ft";
+    grid-gap:20px;
+  } 
+ 
+}
