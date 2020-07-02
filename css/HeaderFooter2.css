@@ -1,0 +1,20 @@
+header{
+    grid-area:hd;
+    background-color:navy;
+    padding-bottom:38px;
+  }
+  .footer{
+    grid-area:ft;
+    background-color:navy;
+    width:100%;
+    color:white;
+ }
+.footer p{
+   color:white;
+ }
+
+ .footer img{
+    height:12%;
+    width:3%;
+    margin-left:20px;
+  }

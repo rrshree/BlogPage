@@ -1,0 +1,12 @@
+.navbar a{
+    grid-area:hd;
+    padding:10px;
+    float:right;
+    margin-left:10px;
+    font-size:20px;
+    color:white;
+    margin-bottom:50px;
+ }
+ .navbar h2{
+    color:white;
+}

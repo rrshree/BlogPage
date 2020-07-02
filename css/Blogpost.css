@@ -1,0 +1,42 @@
+
+#blogcard1{
+   display:flex;
+   flex-direction:column;
+    grid-area:blogcard1;
+    order: 1;
+    background-color:azure;
+ }
+#blogcard1 img{
+   order:2;
+    width:70%;
+    margin-left:20px;
+ }
+
+ #blogcard2 p{
+    order:1;
+ }
+#blogcard2{
+   grid-area:blogcard2;
+    order:2;
+    background-color:azure;
+}
+#blogcard2 img{
+   width:80%;
+   margin-left:30px;
+}
+#blogcard3{
+   display:flex;
+   flex-direction:column;
+   grid-area:blogcard3;
+    order:3;
+    background-color:azure;
+}
+#blogcard3 img{
+   order:2;
+   width:70%;
+   height:60%;
+   margin-left:50px;
+}
+#blogcard3 p{
+   order:1;
+}
